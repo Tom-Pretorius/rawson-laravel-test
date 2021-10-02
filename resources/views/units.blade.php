@@ -78,7 +78,9 @@
                             @foreach ($units as $unit)
                             <tr>
                                 <td>
-                                    <h6 class="mb-0 text-sm">{{$unit->name ?? ""}}</h6>
+                                    <a href="{{ route('unit', ['id' => $unit->id]) }}">
+                                        <h6 class="mb-0 text-sm">{{$unit->name ?? ""}}</h6>
+                                    </a>
                                 </td>
                                 <td class="align-middle text-center">
                                     <span>{{$unit->hit_points ?? ""}}</span>

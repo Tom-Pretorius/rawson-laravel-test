@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ShowUnitsController;
-
+use App\Http\Controllers\ShowUnitController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,3 +15,4 @@ use App\Http\Controllers\ShowUnitsController;
 */
 
 Route::get('/', ShowUnitsController::class)->name('units');
+Route::get('/unit/{id}', ShowUnitController::class)->name('unit');
