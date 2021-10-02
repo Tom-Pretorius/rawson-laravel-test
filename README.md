@@ -27,4 +27,6 @@ Please review these carefully, both the final submitted code & how well these in
 ```
 composer install
 php artisan serve
+npm i
+npm run dev
 ```
