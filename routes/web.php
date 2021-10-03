@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ShowUnitsController;
+use App\Http\Controllers\ShowUnitController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ShowUnitsController::class)->name('units');
+Route::get('/unit/{id}', ShowUnitController::class)->name('unit');
